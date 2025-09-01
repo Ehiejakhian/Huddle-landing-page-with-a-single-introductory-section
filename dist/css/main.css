@@ -1,0 +1,348 @@
+@charset "UTF-8";
+/*
+// Icons
+
+For the social icons, you can use a font icon library. Some suggestions can be found below:
+
+$[Font Awesome](https://fontawesome.com/)
+$[IcoMoon](https://icomoon.io/)
+$[Ionicons](https://ionicons.com/)
+
+> 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) for design file access to see all design details and get hands-on experience using a professional workflow with tools like Figma.
+
+*/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #9ca1e9;
+  text-decoration: none;
+  border: none;
+  border-bottom: 1px solid;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.attribution a:hover {
+  border-bottom: 1px solid #e882e8;
+  color: #e882e8;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  padding: 5% 10%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  gap: 50px;
+  background-image: url("../images/bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #674baf;
+  color: #fff;
+}
+
+@media (max-width: 340px) {
+  body {
+    padding: 5% 5%;
+  }
+}
+
+@media (min-width: 1000px) {
+  body {
+    padding: 70px 5%;
+  }
+}
+
+@media (min-width: 1000px) {
+  body {
+    background-image: url("../images/bg-desktop.svg");
+    background-size: cover;
+  }
+}
+
+header img {
+  max-height: 3em;
+  display: block;
+}
+
+@media (max-width: 700px) {
+  header img {
+    height: 2.5em;
+  }
+}
+
+@media (max-width: 500px) {
+  header img {
+    height: 2em;
+  }
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  gap: 50px;
+}
+
+main > * {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+@media (min-width: 1000px) {
+  main .image-div {
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
+  }
+  main .content {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+  }
+}
+
+.image-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  gap: 0px;
+  min-width: 300px;
+}
+
+@media (max-width: 500px) {
+  .image-div {
+    min-width: 250px;
+  }
+}
+
+.image-div img {
+  display: block;
+  max-width: 100%;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  gap: 30px;
+  text-align: center;
+}
+
+@media (min-width: 700px) {
+  .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    gap: 30px;
+    text-align: left;
+  }
+}
+
+.content h1 {
+  font-weight: 600;
+}
+
+@media (min-width: 700px) {
+  .content h1 {
+    font-size: 2.5rem;
+  }
+}
+
+.content p {
+  max-width: 100%;
+  min-width: none;
+  font-size: 1.125rem;
+  color: #ede8fd;
+}
+
+.content button {
+  background: #fff;
+  border: none;
+  outline: none;
+  color: #674baf;
+  background: #fff;
+  padding: 15px 70px;
+  border-radius: 30px;
+  font-size: 1.125rem;
+  -webkit-transition: background 0.3s ease, color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: background 0.3s ease, color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+@media (max-width: 500px) {
+  .content button {
+    max-width: 100%;
+  }
+}
+
+.content button:hover {
+  cursor: pointer;
+  background: #e882e8;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: column-reverse wrap;
+          flex-flow: column-reverse wrap;
+  gap: 20px;
+}
+
+@media (min-width: 700px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    gap: 10px;
+  }
+}
+
+footer .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  gap: 10px;
+}
+
+@media (min-width: 700px) {
+  footer .social-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    gap: 10px;
+  }
+}
+
+footer .social-links a {
+  border-radius: 50%;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease, scale 0.3s ease;
+  transition: color 0.3s ease, scale 0.3s ease;
+}
+
+footer .social-links a:hover {
+  scale: 1.2;
+  color: #e882e8;
+}
+
+footer .social-links a > * {
+  padding: 10px 12px;
+  border-radius: 50%;
+  border: 2px solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+/*# sourceMappingURL=main.css.map */

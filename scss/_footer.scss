@@ -1,0 +1,15 @@
+.attribution {
+  font-size: 11px; text-align: center;
+}
+.attribution a {
+  color: rgb(156, 161, 233);
+  text-decoration: none;
+  border: none;
+  border-bottom: 1px solid;
+  transition: color 0.3s ease;
+
+  &:hover {
+    border-bottom: 1px solid $Soft-Magenta;
+    color: $Soft-Magenta;
+  }
+}
