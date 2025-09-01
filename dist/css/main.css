@@ -10,6 +10,7 @@ $[Ionicons](https://ionicons.com/)
 
 > 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) for design file access to see all design details and get hands-on experience using a professional workflow with tools like Figma.
 
+
 */
 .attribution {
   font-size: 11px;
@@ -208,7 +209,7 @@ main > * {
 
 @media (min-width: 700px) {
   .content h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 
